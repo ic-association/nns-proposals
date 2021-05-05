@@ -1,3 +1,25 @@
+**Proposal Category:** Economics
+
+**Proposal Type:** #NetworkEconomics
+
+**Author:** (name or Principal?)
+
+**Date:** May 5, 20201 (Timestamp?)
+
+**Status:** Failed
+
+**Summary: **
+
+The proposal aims to update the ICP/XDR conversion rate in the NNS. The proposed rate reflects the current market value of ICP $XX as of May 5, 2021.
+
+**Rationale:** TBD
+
+**Areas Affected:** TBD
+
+**Related Proposals:** None
+
+**NNS Payload:**
+
 (
   vec {
     record {
