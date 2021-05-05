@@ -1,63 +1,26 @@
-**Proposal Category:** Economics
 
-**Proposal Type:** #NetworkEconomics
+**Proposal Topic:** #ExchangeRate
+
+**Proposal Type:** SetICPSDR
+
+**Proposal Type description***: SetICPSDR: Instruct the NNS about the market value of 1 ICP as measured by an IMF SDR. This setting affects cycles pricing (as the value of cycles shall be constant with respect to IMF SDRs).
 
 **Author:** (name or Principal?)
 
 **Author's organization**: ?
 
-**Date:** May 5, 20201 (Timestamp?)
+**Timestamp:** May 5, 20201 (Timestamp?)
 
 **Status:** Failed
 
 **Summary:**
 
-The proposal aims to update the ICP/XDR conversion rate in the NNS. The proposed rate reflects the current market value of ICP $XX as of May 5, 2021.
+The proposal aims to update the ICP/XDR conversion rate in the NNS. The proposed rate reflects the current market value of ICP $XX. A new proposal of this type is expected to be submitted every 5 minutes. 
 
-**Rationale:** TBD
+**Rationale:** Market rate changed and it must be kept upto date in the NNS registry.
 
-**Areas Affected:** TBD
+**Areas Affected:** The rate in the NNS Registry which consumes the rate to determine the rate between ICP and Cycles.
 
 **Related Proposals:** None
 
-**NNS Payload submitted:**
-
-```
-(
-  vec {
-    record {
-      id = opt record { id = 1 };
-      status = 1;
-      topic = 2;
-      ballots = vec {
-        record { 1; record { vote = 1; voting_power = 249_914_442_162 } };
-        record { 18; record { vote = 0; voting_power = 249_914_442_162 } };
-      };
-      proposal_timestamp_seconds = 1_620_214_697;
-      reward_event_round = 0;
-      failed_timestamp_seconds = 0;
-      reject_cost_e8s = 1;
-      latest_tally = opt record {
-        no = 0;
-        yes = 249_914_442_162;
-        total = 251_913_757_700_197;
-        timestamp_seconds = 1_620_214_697;
-      };
-      reward_status = 1;
-      decided_timestamp_seconds = 0;
-      proposal = opt record {
-        url = "";
-        action = opt variant {
-          ExecuteNnsFunction = record {
-            nns_function = 10;
-            payload = blob "DIDL\01l\03\90\cb\8b\aa\01q\df\f5\81\a0\08x\d6\d5\da\c6\0fx\01\00\00@B\0f\00\00\00\00\00(\83\92`\00\00\00\00";
-          }
-        };
-        summary = "Conversion Rate Update";
-      };
-      proposer = opt record { id = 1 };
-      executed_timestamp_seconds = 0;
-    };
-  },
-)
-```
+**NNS Submitted:**
