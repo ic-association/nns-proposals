@@ -22,6 +22,7 @@ The proposal aims to update the ICP/XDR conversion rate in the NNS. The proposed
 
 **NNS Payload submitted:**
 
+```
 (
   vec {
     record {
@@ -59,3 +60,4 @@ The proposal aims to update the ICP/XDR conversion rate in the NNS. The proposed
     };
   },
 )
+```
