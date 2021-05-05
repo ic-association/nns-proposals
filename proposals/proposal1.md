@@ -4,6 +4,8 @@
 
 **Author:** (name or Principal?)
 
+**Author's organization**: ?
+
 **Date:** May 5, 20201 (Timestamp?)
 
 **Status:** Failed
@@ -18,7 +20,7 @@ The proposal aims to update the ICP/XDR conversion rate in the NNS. The proposed
 
 **Related Proposals:** None
 
-**NNS Payload:**
+**NNS Payload submitted:**
 
 (
   vec {
