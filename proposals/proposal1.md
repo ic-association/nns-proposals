@@ -10,7 +10,7 @@
 
 **Status:** Failed
 
-**Summary: **
+**Summary:**
 
 The proposal aims to update the ICP/XDR conversion rate in the NNS. The proposed rate reflects the current market value of ICP $XX as of May 5, 2021.
 
