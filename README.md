@@ -6,5 +6,13 @@ The NNS of the Internet Computer relies on user-generated proposals from the com
 
 To make visibility, this repo is a public collection of proposals. It does not interact with the NNS directly, nor is this where proposals are submitted. To submit a proposal see NNS UI instructions.
 
+## Preferred Citation Format
+
+# Local Development
+## Prerequisties 
 
 ## Proposals
+
+| Number                             | Title                                                                 | Type          | Status   |
+|------------------------------------|-----------------------------------------------------------------------|---------------|----------|
+| [0-Proposal](proposals/template.md)| Proposal Template                                                     | Informational | Draft    |
