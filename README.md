@@ -13,7 +13,7 @@ The NNS works by accepting proposals, and deciding to adopt or reject them based
 
 Users submit these proposals via the NNS UI or the `dfx` [command line interface](https://sdk.dfinity.org/docs/index.html).
 
-To make visibility, this repo is a public collection of proposals. It does not interact with the NNS directly, nor is this where proposals are submitted. To submit a proposal see NNS UI instructions.
+_To increase community transparancy, this repo is a public collection of proposals. It does not interact with the NNS directly, nor is this where proposals are submitted. To submit a proposal see the NNS UI instructions._
 
 # Table of Contents
 1. [Proposals](#proposals)
