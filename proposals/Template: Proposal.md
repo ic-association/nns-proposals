@@ -1,29 +1,3 @@
-# 0-Proposal: Template
-
-```
-ID: 0
-
-Topic: (e.g. #NeuronManagement, #ExchangeRate, #NetworkEconomics, #Governance, etc...)
-
-Type: (e.g. ManageNeuron, ManageNetworkEconomics, Motion, ApproveGenesisKYC, etc...)
-
-Title: 
-
-Proposer: (e.g. neuron ID)
-
-Proposers's organization:
-
-Timestamp: Unix Epoch time
-
-Date time: Unix Epoch time converted to
-
-Status: (e.g. Accepted, Declined, failed)
-```
-
-## Summary:
-
-Provide a short (280 byte) description of the proposal.
-
 ## Rationale:
 
 Explain why this proposal exists, why it matters
