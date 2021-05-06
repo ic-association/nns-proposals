@@ -13,7 +13,7 @@ The NNS works by accepting proposals, and deciding to adopt or reject them based
 
 Neuron holders submit proposals via the NNS UI or the `dfx` [command line interface](https://sdk.dfinity.org/docs/index.html).
 
-_To increase community transparancy, this repo contains details of most proposals that the DFINITY foundation makes. This is not where proposals are submitted and the contents of this repository does not directly impact the NNS._
+_To increase community transparancy, this repo contains details of proposals made by the DFINITY foundation. This is not where proposals are submitted and the contents of this repository does not directly impact the NNS._
 
 # Table of Contents
 1. [Resources](#resources)
@@ -47,7 +47,7 @@ Each proposal submitted to the NNS has the following fields:
 
 `Summary`: Text providing a short description of the proposal, composed using a maximum of 280 bytes.
 
-`URL`: The Web address of additional content required to evaluate the proposal, specified using HTTPS. For example, the address might describe content supporting the assignment of a DCID (data center id) to a new data center.
+`URL`: The Web address of additional content required to evaluate the proposal, specified using HTTPS. *This repository contains pages that for proposals.*
 
 `Proposer`: The id of the neuron that submitted the proposal. When a proposal is submitted, a "charge" is placed on its balance, in case it is rejected. So the balance needs to be big enough to pay the charge on (all) rejection(s). We require a neuron to have a dissolve delay >= 6 months to vote, and that should apply to submitting proposals too.
 
