@@ -9,7 +9,7 @@ Type: (e.g. ManageNeuron, ManageNetworkEconomics, Motion, ApproveGenesisKYC, etc
 
 Title: 
 
-Proposer: 
+Proposer: (e.g. neuron ID)
 
 Proposers's organization:
 
