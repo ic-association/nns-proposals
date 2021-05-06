@@ -1,5 +1,5 @@
 
-# 0-Proposal: Template
+# 0-Proposal: Example
 
 ```
 Proposal ID: 0
@@ -10,7 +10,7 @@ Author:
 Author's organization: 
 Timestamp: 1620278127
 Time: Thursday, May 6, 2021 5:15:17 AM GMT
-Status: Failed
+Status: Accepted
 ```
 
 ## Summary:
