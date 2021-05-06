@@ -11,9 +11,9 @@ The purpose of the Network Nervous System (NNS) of the is to allow the [Internet
 
 The NNS works by accepting proposals, and deciding to adopt or reject them based on voting activity by “neurons” that network participants have created.
 
-Users submit these proposals via the NNS UI or the `dfx` [command line interface](https://sdk.dfinity.org/docs/index.html).
+Neuron holders submit proposals via the NNS UI or the `dfx` [command line interface](https://sdk.dfinity.org/docs/index.html).
 
-_To increase community transparancy, this repo is a public collection of proposals. It does not interact with the NNS directly, nor is this where proposals are submitted. To submit a proposal see the NNS UI instructions._
+_To increase community transparancy, this repo contains details of most proposals that the DFINITY foundation makes. This is not where proposals are submitted and the contents of this repository does not directly impact the NNS._
 
 # Table of Contents
 1. [Resources](#resources)
@@ -24,7 +24,6 @@ _To increase community transparancy, this repo is a public collection of proposa
 ## Resources
 
 - [Understanding the Internet Computer’s Network Nervous System, ICP Utility Tokens, and Neurons](https://medium.com/@dfinity/730dab65cae8)
-- Submitting proposals via the NNS UI (TBD)
 - [Technical Overview of the Internet Computer](https://medium.com/dfinity/a-technical-overview-of-the-internet-computer-f57c62abc20f)
 - [Internet Computer network dashboard](https://dashboard.internetcomputer.org/)
 
@@ -36,7 +35,7 @@ The [DFINITY Foundation](https://dfinity.org/) is a Swisss not-for-profit organi
 You can observe the state of the Internet Computer's infrastructure (Nodes, data centers, subnets) and traditional blockchain metrics (blocks/second, Token Supply, etc...)
 
 - https://dashboard.internetcomputer.org Network dashboard by the Internet Computer Association
-- https://www.dfinityexplorer.org/# by [Dylan Miller](https://github.com/dylancm4)
+- https://www.dfinityexplorer.org by [Dylan Miller](https://github.com/dylancm4)
 
 To interact with the community, check out the [developer forum](https://forum.dfinity.org/)
 
@@ -62,52 +61,20 @@ The topic of a proposal, which is inferred from its type, determines how it will
 
 `#NeuronManagement`: A special topic by means of which a neuron can be managed by the followees for this topic (in this case, there is no fallback to). Votes on this topic are not included in the voting history of the neuron. For proposals on this topic, only followees on the this topic, of the neuron that the proposals pertains to, are allowed to vote. As the set of eligible voters on this topic is restricted, proposals on this topic have a shorter than normal voting period.
 
-`#ExchangeRate`: All proposals that provide “real time” information about the value of ICP, as measured by an IMF SDR, which allows the NNS to convert ICP to cycles (which power computation) at a rate which keeps their real world cost constant. Because proposals on this topic are very frequent, they have a shorter voting period and votes on this topic are not included in the voting history of the neuron.
+`#ExchangeRate`: All proposals that provide “real time” information about the value of ICP, as measured by an IMF SDR, which allows the NNS to convert ICP to cycles (which power computation) at a rate which keeps their real world cost constant. Because proposals on this topic are very frequent, they have a shorter voting period and votes on this topic are not included in the voting history of the neuron. *Proposals on this topic typically do not have a URL linking to a more detailed description.*
 
-`#NetworkEconomics`: Proposals that administer network economics, for example, determining what rewards should be paid to node operators.
+[`#NetworkEconomics`](proposals/network_economics/README.md): Proposals that administer network economics, for example, determining what rewards should be paid to node operators.
 
-`#Governance`: All proposals that administer governance, for example to freeze malicious canisters that are harming the network. 
+[`#Governance`](proposals/governance/README.md): All proposals that administer governance, for example to freeze malicious canisters that are harming the network. 
 
-`#NodeAdmin`: All proposals that administer node machines somehow, including, but not limited to, upgrading or configuring the OS, upgrading or configuring the virtual machine framework and upgrading or configuring the node replica software.
+[`#NodeAdmin`](proposals/node_admin/README.md): All proposals that administer node machines somehow, including, but not limited to, upgrading or configuring the OS, upgrading or configuring the virtual machine framework and upgrading or configuring the node replica software.
 
-`#ParticipantManagement`: All proposals that administer network participants, for example, granting and revoking DCIDs (data center identities) or NOIDs (node operator identities).
+[`#ParticipantManagement`](proposals/participant_management/README.md): All proposals that administer network participants, for example, granting and revoking DCIDs (data center identities) or NOIDs (node operator identities).
 
-`#SubnetManagement`: All proposals that administer network subnets, for example creating new subnets, adding and removing subnet nodes, and splitting subnets.
+[`#SubnetManagement`](proposals/subnet_management/README.md): All proposals that administer network subnets, for example creating new subnets, adding and removing subnet nodes, and splitting subnets.
 
-`#NetworkCanisterManagement`: Installing and upgrading “system” canisters that belong to the network. For example, upgrading the NNS. 
+[`#NetworkCanisterManagement`](proposals/network_canister_management/README.md): Installing and upgrading “system” canisters that belong to the network. For example, upgrading the NNS. 
 
-`#KYC`: Proposals that update KYC information for regulatory purposes, for example during the initial Genesis distribution of ICP in the form of neurons.
+`#KYC`: Proposals that update Genesis KYC information for regulatory purposes, for example during the initial Genesis distribution of ICP in the form of neurons.
 
-`#NodeProviderRewards`: Topic for proposals to reward node providers.
-
-### Types
-
-Initial proposal types include:
-
-- **ManageNeuron** (`#NeuronManagement`, Restricted Voting)
-- **ManageNetworkEconomics** (`#NetworkEconomics`)
-- **Motion** (`#Governance`) 
-- **ApproveGenesisKYC** (`#KYC`)
-- **AddOrRemoveNodeProvider** (`#Participant Management`)
-- **RewardNodeProvider** (`#NetworkEconomics`)
-- **SetDefaultFollowees** (`#Governance`)
-- **CreateSubnet** (`#SubnetManagement`)
-- **AddNodeToSubnet** (`#SubnetManagement`)
-- **InstallNetworkCanister** (`#NetworkCanisterManagement`)
-- **UpgradeNetworkCanister** (`#NetworkCanisterManagement`)
-- **BlessReplicaVersion** (`#NodeAdmin`)
-- **RecoverSubnet** (`#SubnetManagement`)
-- **UpdateSubnetConfig** (`#SubnetManagement`)
-- **AssignNOID** (`#ParticipantManagement`)
-- **RootUpgrade** (`#NetworkCanisterManagement`)
-- **SetICPSDR** (`#ExchangeRate`)
-- **UpgradeSubnetToReplicaVersion** (`#SubnetManagement`)
-- **ClearProvisionalWhitelist** (`#NetworkEconomics`)
-- **RemoveNodeFromSubnet** (`#SubnetManagement`)
-- **SetAuthorizedSubnetworks** (`#Governance`)
-- **SetFirewallConfig** (`#SubnetManagement`)
-- **UpdateNodeOperatorConfig** (`#NodeAdmin`)
-- **StopOrStartNNSCanister** (`#NetworkCanisterManagement`)
-
-
-
+[`#NodeProviderRewards`](proposals/node_provider_rewards/README.md): Topic for proposals to reward node providers.
