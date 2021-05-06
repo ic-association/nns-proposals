@@ -20,3 +20,34 @@ https://github.com/dfinity/nns-proposals/proposals/network_economics/20210510T16
 ```
 
 would be used for a `#NetworkEconomics` proposal submitted around 16:00UTC (9am PT) on May the 10th, 2021.
+
+
+### Proposal types
+
+Mapping proposal types to topics:
+
+- **ManageNeuron** -- `#NeuronManagement` (restricted voting)
+- **ManageNetworkEconomics** -- `#NetworkEconomics`
+- **Motion** -- `#Governance`
+- **ApproveGenesisKYC** -- `#KYC`
+- **AddOrRemoveNodeProvider** -- `#Participant Management`
+- **RewardNodeProvider** -- `#NodeProviderRewards`
+- **SetDefaultFollowees** -- `#Governance`
+- **CreateSubnet** -- `#SubnetManagement`
+- **AddNodeToSubnet** -- `#SubnetManagement`
+- **InstallNetworkCanister** -- `#NetworkCanisterManagement`
+- **UpgradeNetworkCanister** -- `#NetworkCanisterManagement`
+- **BlessReplicaVersion** -- `#NodeAdmin`
+- **RecoverSubnet** -- `#SubnetManagement`
+- **UpdateSubnetConfig** -- `#SubnetManagement`
+- **AssignNOID** -- `#ParticipantManagement`
+- **RootUpgrade** -- `#NetworkCanisterManagement`
+- **SetICPSDR** -- `#ExchangeRate`
+- **UpgradeSubnetToReplicaVersion** -- `#SubnetManagement`
+- **ClearProvisionalWhitelist** -- `#NetworkEconomics`
+- **RemoveNodeFromSubnet** -- `#SubnetManagement`
+- **SetAuthorizedSubnetworks** -- `#Governance`
+- **SetFirewallConfig** -- `#SubnetManagement`
+- **UpdateNodeOperatorConfig** -- `#NodeAdmin`
+- **StopOrStartNNSCanister** -- `#NetworkCanisterManagement`
+

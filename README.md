@@ -78,3 +78,4 @@ The topic of a proposal, which is inferred from its type, determines how it will
 `#KYC`: Proposals that update Genesis KYC information for regulatory purposes, for example during the initial Genesis distribution of ICP in the form of neurons.
 
 [`#NodeProviderRewards`](proposals/node_provider_rewards/README.md): Topic for proposals to reward node providers.
+
