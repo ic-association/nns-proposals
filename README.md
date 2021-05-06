@@ -1,5 +1,10 @@
 # Network Nervous System (NNS) proposals for the Internet Computer
 
+<!-- ![](nns.png | width=500) -->
+<p align="center">
+    <img width="600" src="nns.png">
+</p>
+
 ## The NNS
 
 The NNS of the [Internet Computer](https://github.com/dfinity/ic-staging) relies on user-generated proposals from the community which are voted on and executed on-chain. Users submit these proposals via the NNS UI or the `dfx` [command line interface](https://sdk.dfinity.org/docs/index.html).
