@@ -5,9 +5,13 @@
     <img width="600" src="nns.png">
 </p>
 
-## The NNS (Network Nervous System)
+## The Network Nervous System (NNS)
 
-The NNS of the [Internet Computer](https://github.com/dfinity/ic-staging) relies on user-generated proposals from the community which are voted on and executed on-chain. Users submit these proposals via the NNS UI or the `dfx` [command line interface](https://sdk.dfinity.org/docs/index.html).
+The purpose of the Network Nervous System (NNS) of the is to allow the [Internet Computer (IC) network](https://dashboard.internetcomputer.org/) to be governed in an open, decentralized, and secure manner. It has complete control over all aspects of the network. For example, it can upgrade the protocol and software used by the node machines that host the network; it can induct new node operators and machines into the network; it can create new subnets (special blockchains) to increase network capacity; it can split subnets to divide their load; it can configure economic parameters that control how much must be paid by users for compute capacity; and, in extremis, it can freeze malicious canister software (smart contracts) in order to protect the network, and many other things. 
+
+The NNS works by accepting proposals, and deciding to adopt or reject them based on voting activity by “neurons” that network participants have created.
+
+Users submit these proposals via the NNS UI or the `dfx` [command line interface](https://sdk.dfinity.org/docs/index.html).
 
 To make visibility, this repo is a public collection of proposals. It does not interact with the NNS directly, nor is this where proposals are submitted. To submit a proposal see NNS UI instructions.
 
