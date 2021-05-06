@@ -26,6 +26,15 @@ _To increase community transparancy, this repo is a public collection of proposa
 - [Understanding the Internet Computer’s Network Nervous System, ICP Utility Tokens, and Neurons](https://medium.com/@dfinity/730dab65cae8)
 - Submitting proposals via the NNS UI (TBD)
 - [Technical Overview of the Internet Computer](https://medium.com/dfinity/a-technical-overview-of-the-internet-computer-f57c62abc20f)
+- [Internet Computer network dashboard](https://dashboard.internetcomputer.org/)
+
+### Network Dasboards from the community
+You can observe the state of the IC's infrastructure (Nodes, data centers, subnets) and traditional blockchain metrics (blocks/second, Token Supply, etc...)
+
+- https://dashboard.internetcomputer.org Network dashboard by the Internet Computer Association
+- https://www.dfinityexplorer.org/# by [Dylan Miller](https://github.com/dylancm4)
+
+To interact with the community, check out the [developer forum](https://forum.dfinity.org/)
 
 ## Proposals
 
