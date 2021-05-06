@@ -2,13 +2,22 @@
 
 ```
 ID: 0
-Topic: (#NeuronManagement, #ExchangeRate, #NetworkEconomics, #Governance, #NodeAdmin, #ParticipantManagement, #SubnetManagement, #NetworkCanisterManagement, #KYC, #NodeProviderRewards)
-Type: (ManageNeuron, ManageNetworkEconomics, Motion, ApproveGenesisKYC, AddOrRemoveNodeProvider, RewardNodeProvider, SetDefaultFollowees
-Title: Descriptive title
-Author: FirstName (@GitHubUsername) and GitHubUsername (@GitHubUsername)
-Author's organization:
-Timestamp: Month Day, Year
-Status:
+
+Topic: (e.g. #NeuronManagement, #ExchangeRate, #NetworkEconomics, #Governance, #NodeAdmin, #ParticipantManagement, #SubnetManagement, #NetworkCanisterManagement, #KYC, #NodeProviderRewards)
+
+Type: (e.g. ManageNeuron, ManageNetworkEconomics, Motion, ApproveGenesisKYC, AddOrRemoveNodeProvider, RewardNodeProvider, SetDefaultFollowees
+
+Title: 
+
+Proposer: 
+
+Proposers's organization:
+
+Timestamp: Unix Epoch time
+
+Date time: Unix Epoch time converted to
+
+Status: (e.g. Accepted, Declined, failed)
 ```
 
 ## Summary:
@@ -17,14 +26,12 @@ Provide a short (280 byte) description of the proposal.
 
 ## Rationale:
 
-This section is for rational.
+Explain why this proposal exists, why it matters
 
 ## Areas Affected:
 
-This section is for areas affected.
+Explain which area of the Internet Computer are affected. If this proposal edits something in the IC Registry or the Ledger Canister, please call that out.
 
 ## Related Proposals:
 
-<URL>
-
-**NNS Submitted:**
+List any previouus proposals related.
