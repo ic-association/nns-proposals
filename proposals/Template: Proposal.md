@@ -15,7 +15,6 @@ Status:
 
 Provide a short (280 byte) description of the proposal.
 
-
 ## Rationale:
 
 This section is for rational.
