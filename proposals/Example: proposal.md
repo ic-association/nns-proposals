@@ -29,4 +29,3 @@ The rate in the NNS Registry which consumes the rate to determine the rate betwe
 
 None
 
-**NNS Submitted:**
