@@ -1,31 +1,6 @@
-
-# 0-Proposal: Example
-
-```
-Proposal ID: 0
-
-Proposal Topic: #ExchangeRate
-
-Proposal Type: SetICPSDR
-
-Proposal Type description: SetICPSDR: Instruct the NNS about the market value of 1 ICP as measured by an IMF SDR.
-
-Proposer: 
-
-Proposer's organization: 
-
-Timestamp: 1620278127
-
-Date time: Thursday, May 6, 2021 5:15:17 AM GMT
-
-Status: Accepted
-```
-
-## Summary:
+## Rationale:
 
 The proposal aims to update the ICP/XDR conversion rate in the NNS. This setting affects cycles pricing (as the value of cycles shall be constant with respect to IMF SDRs). The proposed rate reflects the current market value of ICP $XX. A new proposal of this type is expected to be submitted every 5 minutes.
-
-## Rationale:
 
 Market rate changed and it must be kept upto date in the NNS registry.
 
