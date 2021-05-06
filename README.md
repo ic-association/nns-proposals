@@ -28,8 +28,12 @@ _To increase community transparancy, this repo is a public collection of proposa
 - [Technical Overview of the Internet Computer](https://medium.com/dfinity/a-technical-overview-of-the-internet-computer-f57c62abc20f)
 - [Internet Computer network dashboard](https://dashboard.internetcomputer.org/)
 
+### DFINITY Foundation
+
+The [DFINITY Foundation](https://dfinity.org/) is a Swisss not-for-profit organization based in Zurich, Switzerland, and oversees research centers in Palo Alto, San Francisco, and Zurich. Its goal is to further the design, development, and adoption of the Internet Computer Protocol.
+
 ### Network Dasboards from the community
-You can observe the state of the IC's infrastructure (Nodes, data centers, subnets) and traditional blockchain metrics (blocks/second, Token Supply, etc...)
+You can observe the state of the Internet Computer's infrastructure (Nodes, data centers, subnets) and traditional blockchain metrics (blocks/second, Token Supply, etc...)
 
 - https://dashboard.internetcomputer.org Network dashboard by the Internet Computer Association
 - https://www.dfinityexplorer.org/# by [Dylan Miller](https://github.com/dylancm4)
