@@ -34,4 +34,4 @@ Explain which area of the Internet Computer are affected. If this proposal edits
 
 ## Related Proposals:
 
-List any previouus proposals related.
+List any previous proposals related.
