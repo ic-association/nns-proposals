@@ -3,13 +3,21 @@
 
 ```
 Proposal ID: 0
+
 Proposal Topic: #ExchangeRate
+
 Proposal Type: SetICPSDR
+
 Proposal Type description: SetICPSDR: Instruct the NNS about the market value of 1 ICP as measured by an IMF SDR.
-Author: 
-Author's organization: 
+
+Proposer: 
+
+Proposer's organization: 
+
 Timestamp: 1620278127
+
 Date time: Thursday, May 6, 2021 5:15:17 AM GMT
+
 Status: Accepted
 ```
 
