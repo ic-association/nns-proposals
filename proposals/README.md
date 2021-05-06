@@ -5,7 +5,7 @@ Proposals filed by neurons controlled by the DFINITY foundation have supporting 
 Supporting material is named according to the following scheme:
 
 ```
-https://github.com/dfinity/nns-proposals/proposals/[topic]/[YYYY][MM][DD]T[hh][mm]Z.md
+https://github.com/dfinity/nns-proposals/blob/main/proposals/[topic]/[YYYY][MM][DD]T[hh][mm]Z.md
 ```
 
 Here `[topic]` is the topic of the proposal in case snake and
@@ -16,7 +16,7 @@ time of the proposal submission (in the UTC timezone).
 For example, the URL
 
 ```
-https://github.com/dfinity/nns-proposals/proposals/network_economics/20210510T1600Z.md
+https://github.com/dfinity/nns-proposals/blob/main/proposals/network_economics/20210510T1600Z.md
 ```
 
 would be used for a `#NetworkEconomics` proposal submitted around 16:00UTC (9am PT) on May the 10th, 2021.
