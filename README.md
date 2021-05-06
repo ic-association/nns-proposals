@@ -16,10 +16,16 @@ Users submit these proposals via the NNS UI or the `dfx` [command line interface
 _To increase community transparancy, this repo is a public collection of proposals. It does not interact with the NNS directly, nor is this where proposals are submitted. To submit a proposal see the NNS UI instructions._
 
 # Table of Contents
-1. [Proposals](#proposals)
-2. [Topics](#topics)
-3. [Types](#types)
+1. [Resources](#resources)
+2. [Proposals](#proposals)
+3. [Topics](#topics)
+4. [Types](#types)
 
+## Resources
+
+- [Understanding the Internet Computer’s Network Nervous System, ICP Utility Tokens, and Neurons](https://medium.com/@dfinity/730dab65cae8)
+- Submitting proposals via the NNS UI (TBD)
+- [Technical Overview of the Internet Computer](https://medium.com/dfinity/a-technical-overview-of-the-internet-computer-f57c62abc20f)
 
 ## Proposals
 
