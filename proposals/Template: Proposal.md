@@ -3,9 +3,9 @@
 ```
 ID: 0
 
-Topic: (e.g. #NeuronManagement, #ExchangeRate, #NetworkEconomics, #Governance, #NodeAdmin, #ParticipantManagement, #SubnetManagement, #NetworkCanisterManagement, #KYC, #NodeProviderRewards)
+Topic: (e.g. #NeuronManagement, #ExchangeRate, #NetworkEconomics, #Governance, etc...)
 
-Type: (e.g. ManageNeuron, ManageNetworkEconomics, Motion, ApproveGenesisKYC, AddOrRemoveNodeProvider, RewardNodeProvider, SetDefaultFollowees
+Type: (e.g. ManageNeuron, ManageNetworkEconomics, Motion, ApproveGenesisKYC, etc...)
 
 Title: 
 
