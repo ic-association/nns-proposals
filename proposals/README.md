@@ -11,7 +11,7 @@ https://github.com/dfinity/nns-proposals/blob/main/proposals/[topic]/[YYYY][MM][
 Here `[topic]` is the topic of the proposal in case snake and
 `[YYYY][MM][DD]T[hh][mm]Z` is the [ISO
 8601](https://en.wikipedia.org/wiki/ISO_8601) date and approximate
-time of the proposal submission (in the UTC timezone).
+time of the proposal submission (in the UTC timezone). You can use `date --utc +%Y%m%dT%H%MZ` to get this format.
 
 For example, the URL
 
