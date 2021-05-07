@@ -46,8 +46,6 @@ To interact with the community, check out the [developer forum](https://forum.df
 
 Each proposal submitted to the NNS has the following fields:
 
-`Id`: The identity of the proposal. Every proposal has a unique identity, which is assigned by the NNS when it is submitted.
-
 `Summary`: Text providing a short description of the proposal, composed using a maximum of 280 bytes.
 
 `URL`: The Web address of additional content required to evaluate the proposal, specified using HTTPS. *This repository contains pages with supporting material for proposals.*
