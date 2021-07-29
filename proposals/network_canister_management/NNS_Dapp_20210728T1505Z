@@ -1,0 +1,26 @@
+Upgrade NNS Dapp canister to commit 51f34a1f53c155deeb73efb878369c42f428b078.
+
+Wasm hash: 9705ca6038d6b70e3436c7e45d0a258975d9be00c2b4dbb18dcc28c215496eef (https://github.com/dfinity/nns-dapp/runs/3182600096)
+
+Changes:
+
+```
+git log --oneline --first-parent 97910b5714353e04888755c0838a9ddd037b45dc..51f34a1f53c155deeb73efb878369c42f428b078
+
+51f34a1 Fix voting power display on 'Increase Dissolve Delay' widget (#144)
+7527ade Rename 'aging bonus' to 'age bonus' (#143)
+b9aedd6 Show Voting power only if dissolve delay is greater than 6 months. (#142)
+3dacc01 Neuron source account (#141)
+47c8a7b Check balance is greater than transaction fee before refunding (#140)
+6174ce9 Voting power information (#139)
+2993f4d EXC-391: Support staking via the 'send' transaction (#138)
+d6389f5 removed textScaleFactor from widgets and replaced with font sizes. (#137)
+cd755b8 EXC-390: Allow principal of main account to fetch the tx status of a HW account. (#136)
+360b6f4 Fixed size given for font size of overlay widget (#135)
+d5766e6 Made Text Sizes for widgets of neuron page to be proportioned to the  same size throughout the page (#134)
+845f7b3 Confirmation box now shown before unlocking neuron (#133)
+3ed4c12 Fix page formats for mobile (#132)
+c71be3d chore: Update candid files. (#131)
+e16ab78 Add hotkey new (#130)
+c79832e EXC-363: Replace lazy_static with thread_local (#129)
+```
