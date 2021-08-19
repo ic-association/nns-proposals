@@ -1,8 +1,14 @@
-Upgrade NNS Dapp canister to commit 51f34a1f53c155deeb73efb878369c42f428b078.
+# Upgrade NNS Dapp canister to commit 51f34a1f53c155deeb73efb878369c42f428b078.
 
-Wasm hash: 9705ca6038d6b70e3436c7e45d0a258975d9be00c2b4dbb18dcc28c215496eef (https://github.com/dfinity/nns-dapp/runs/3182600096)
+## Summary
 
-Changes:
+This update contains some minor security fixes, UI changes, and work to support the future hardware wallets.
+
+## Wasm Hash
+
+fef3b875094e73f780821af77f76054826d8e6a058d4a58fa0b29c80082acde9 (https://github.com/dfinity/nns-dapp/runs/3371469917?check_suite_focus=true)
+
+## Changes:
 
 ```
 git log --oneline --first-parent 97910b5714353e04888755c0838a9ddd037b45dc..51f34a1f53c155deeb73efb878369c42f428b078
