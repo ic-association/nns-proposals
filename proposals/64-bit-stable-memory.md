@@ -7,17 +7,15 @@ Currently canisters are effectively limited to 4GiB of storage. This is because 
 
 A number of applications can benefit from access to additional storage without having to partitioned into multiple canisters. The goal of this proposal is to introduce a stable memory API that allows canisters to address more than 4GiB of memory allowing canisters to have more storage bound [eventually] only by the actual capacity of the subnet.
 
-The goal of this proposal is to increase the amount of memory that canisters can access [eventually] bound only by the actual capacity of the subnet. Since, the Memory64 proposal is not standardized yet and its implementation in Wasmtime is not production ready yet, this proposal enables the increase by introducing a new stable memory API.
-
 ## Background
-When the stable memory was first designed and implemented, the Memory64 proposal was not standardized yet and only recently it was implemented in Wasmtime but the implementation is not production ready yet. Further, the multiple memories proposal is still in Phase 3. With this in mind, stable memory was designed with a 32-bit addressing scheme so that it could eventually be replaced by Wasm native features.
+When the stable memory was first designed and implemented, the [Memory64 proposal](https://github.com/WebAssembly/memory64) was not [standardized](https://github.com/WebAssembly/proposals) yet and only recently it was [implemented](https://github.com/bytecodealliance/wasmtime/pull/3153) in Wasmtime but the implementation is not production ready yet. Further, the multiple memories proposal is still in [Phase 3](https://github.com/WebAssembly/proposals#phase-3---implementation-phase-cg--wg). With this in mind, stable memory was designed with a 32-bit addressing scheme so that it could eventually be replaced by Wasm native features.
 
 Supporting 64-bit Wasm memory presents a number of performance challenges for the Internet Computer. Currently Wasmtime can efficiently eliminate bounds checks for 32-bit memory accesses by using guard pages. A similar optimization is not possible for 64-bit memory accesses making them more expensive. Besides that more optimization work around memory.grow() needs to be done before the implementation is production ready.
 
 Since bringing the Memory64 support to IC may take a while and some canisters need large memory now, we propose an extension of the stable memory API to 64-bit instead.
 
 ## Proposal
-We propose to add four new functions to the System API 1 that mirror the existing 32-bit functions:
+We propose to add four new functions to the [System API](https://sdk.dfinity.org/docs/interface-spec/index.html#system-api) that mirror the existing 32-bit functions:
 
 * ic0.stable64_write: (offset: i64, src: i64, size: i64) -> ()
 Copies the Wasm memory region specified by src and size to the stable memory starting at the given offset. Note that this API uses 64-bit addressing for the Wasm memory even though at the moment the Wasm memory only supports 32-bit addressing. This is done to keep the possibility of supporting 64-bit Wasm memory open in the future.
@@ -27,7 +25,7 @@ Copies the stable memory region specified by offset and size to the Wasm memory 
 Returns the number of 64KiB pages in the stable memory as a 64-bit integer. Note that it would be possible for this function to continue to return a 32-bit integer as the 32-bit version of the API does. With the page size of 64KiB, a 32-bit integer could address up to 256 TiB which could be sufficient for a very long time. However, it was felt that there should be a clear distinction between the 32-bit and 64-bit versions of the API and having this API return a 64-bit integer should not have any negative impact.
 * ic0.stable64_grow: (additional_pages: i64) -> (old_page_count: i64)
 Tries to grow the memory by new_pages many pages containing zeroes. If successful, returns the previous size of the memory (in pages). Otherwise, returns -1.
-As the specification repo of the Internet Computer is not open source yet, please see the proposed diff here 1.
+As the specification repo of the Internet Computer is not open source yet, please see the proposed diff [here](https://gist.github.com/ulan/8cc37022c72fe20dc1d57fdfd0aaf1fd).
 
 ## Backwards compatibility
 In order to ensure smooth transition and upgrade we allow canisters to use the 32-bit and 64-bit versions interchangeably up to 4GiB. In other words, both versions operate on the same stable memory. As soons as the size of the stable memory grows beyond 4GiB the 32-bit versions cease to work. Calling them will result in a trap.
