@@ -1,0 +1,26 @@
+## Proposal to Upgrade the Registry Canister
+
+### Proposer: Dfinity Foundation
+### New Wasm Hash: d1c6ee4c7af6f2095c934046caddb32db1fecf131ffca89372e7cd875dddef60
+### Target canister: rwlgt-iiaaa-aaaaa-aaaaa-cai
+---
+## Release notes
+
+### New features
+* Pagination now used to limit payload sizes for `get_changes_since(…)` (similar to the certified equivalent)
+* New proposal type to remove subnet records from the registry
+
+### Improvements
+* The following fields have been added to subnet records:
+	* `max_block_payload_size`
+	* `max_instructions_per_message`
+	* `max_instructions_per_round`
+	* `max_instructions_per_install_code`
+* The following fields have been removed from subnet records:
+	* `initial_dkg_transcript`
+* General comment updates, refactors and cleanups for code clarity, especially around invariants
+* The `authz` pattern is no longer used in this canister; it was used only for controlling access to `atomic_mutate(…)`. Instead, we hardcode that only the governance canister and the root canister can mutate the registry
+	* Note that the authz data still exists in the canister's stable memory, but will be deleted in a subsequent upgrade
+* `get_value()` response error code changed in the case of a malformed message (it previously mistakenly returned `KeyNotPresent`)
+* Earlier panic when checking invariants for subnet membership
+* Additional checks to defend against races in subnet recovery
