@@ -1,0 +1,11 @@
+## Proposal to Upgrade the GTC Canister
+
+### Proposer: Dfinity Foundation
+### New Wasm Hash: 51af7a8de07429977803d97f689f1f07c1bb121ccea1fe9e0dfe0b359d6245e9
+### Target canister: renrk-eyaaa-aaaaa-aaada-cai
+
+---
+## Release notes
+
+## New features
+* Change the forwarding functionality to only forward the whitelisted accounts
