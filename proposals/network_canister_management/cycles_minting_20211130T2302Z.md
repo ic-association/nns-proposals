@@ -1,7 +1,7 @@
 ## Proposal to Upgrade the Cycles Minting Canister
 
 ### Proposer: Dfinity Foundation
-### New Wasm Hash: // wasm hash
+### New Wasm Hash: 72662102701da750ab8787750ce42e601b2ce838e779274080bd741656cd97fb
 ### Target canister: rkp4c-7iaaa-aaaaa-aaaca-cai
 
 ---
